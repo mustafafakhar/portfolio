@@ -39,56 +39,96 @@
 					<div id="main" class="alt">
 
 						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h1>Skills</h1>
-									</header>
-                                                                          <div class="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; justify-items: center; padding: 20px 0;">
-									<div style="text-align: center;">	
-     								              <!-- Python -->
-										<div style="logo-item">
-									        <img src="images/python.png" alt="Python Logo" style="width:100px; height:100px; border-radius:50%; object-fit:contain;">
-									        <p>Python</p>
-									         </div>
-									        <!-- SQL -->
-										<div style="text-align: center;">
-											<img src="images/Mysql_logo.png" alt="SQL Logo" style="width:120px; height:120px;"> 
-											<p>SQL</p>
-									</div>
-										<!-- Power BI -->
-										<div style="text-align: center;">
-											<img src="images/powerbi.png" alt="PowerBI Logo" style="width:120px; height:120px; border-radius:50%; object-fit:contain;" />
-											<p>Power BI</p>
-									</div>
-										<!-- Excel -->
-										<div style="text-align: center;">
-											<img src="images/excel.png" alt="Excel Logo" style="width:120px; height:120px; border-radius:50%; object-fit:contain;" />
-											<p>Excel</p>
-									</div>
-										<!-- Tableau -->
-										<div style="text-align: center;">
-											<img src="images/tableu.png" alt="Tabeau Logo" style="width:120px; height:120px; border-radius:50%; object-fit:contain;" />
-											<p>Tableau</p>
-									</div>
-										<!-- Seaborn -->
-										<div style="text-align: center;">
-											<img src="images/seaborn.png" alt="Tabeau Logo" style="width:120px; height:120px; border-radius:50%; object-fit:contain;" />
-											<p>Seaborn</p>
-									</div>
-										<!-- SciKit Learn -->
-										<div style="text-align: center;">
-											<img src="images/scikit-learn.png" alt="SciKit Learn Logo" style="width:120px; height:120px;  object-fit:contain;" />
-											<p>SciKit Learn</p>
-									</div>
-										<!-- Matplotlib -->
-										<div style="text-align: center;">
-											<img src="images/matplotlib.png" alt="Matplotlib Logo" style="width:120px; height:120px; object-fit:contain;" />
-											<p>Matplotlib</p>
-									 </div>
-										</div>
-									</div>
-												
+							Copy
+<section id="one">
+    <div class="inner">
+        <header class="major">
+            <h1>Skills</h1>
+        </header>
+        <div class="skills-scroll-container" style="display: flex; overflow-x: auto; gap: 40px; padding: 20px 0; align-items: center;">
+            <!-- Python -->
+            <div class="skill-item" style="flex: 0 0 auto; text-align: center;">
+                <img src="images/python.png" alt="Python" style="width: 80px; height: 80px; object-fit: contain; filter: grayscale(100%); transition: 0.3s;">
+                <p style="margin-top: 10px; font-weight: 600;">Python</p>
+            </div>
+
+            <!-- SQL -->
+            <div class="skill-item" style="flex: 0 0 auto; text-align: center;">
+                <img src="images/Mysql_logo.png" alt="SQL" style="width: 80px; height: 80px; object-fit: contain; filter: grayscale(100%); transition: 0.3s;">
+                <p style="margin-top: 10px; font-weight: 600;">SQL</p>
+            </div>
+
+            <!-- Power BI -->
+            <div class="skill-item" style="flex: 0 0 auto; text-align: center;">
+                <img src="images/powerbi.png" alt="Power BI" style="width: 80px; height: 80px; object-fit: contain; filter: grayscale(100%); transition: 0.3s;">
+                <p style="margin-top: 10px; font-weight: 600;">Power BI</p>
+            </div>
+
+            <!-- Excel -->
+            <div class="skill-item" style="flex: 0 0 auto; text-align: center;">
+                <img src="images/excel.png" alt="Excel" style="width: 80px; height: 80px; object-fit: contain; filter: grayscale(100%); transition: 0.3s;">
+                <p style="margin-top: 10px; font-weight: 600;">Excel</p>
+            </div>
+
+            <!-- Tableau -->
+            <div class="skill-item" style="flex: 0 0 auto; text-align: center;">
+                <img src="images/tableu.png" alt="Tableau" style="width: 80px; height: 80px; object-fit: contain; filter: grayscale(100%); transition: 0.3s;">
+                <p style="margin-top: 10px; font-weight: 600;">Tableau</p>
+            </div>
+
+            <!-- Seaborn -->
+            <div class="skill-item" style="flex: 0 0 auto; text-align: center;">
+                <img src="images/seaborn.png" alt="Seaborn" style="width: 80px; height: 80px; object-fit: contain; filter: grayscale(100%); transition: 0.3s;">
+                <p style="margin-top: 10px; font-weight: 600;">Seaborn</p>
+            </div>
+
+            <!-- SciKit Learn -->
+            <div class="skill-item" style="flex: 0 0 auto; text-align: center;">
+                <img src="images/scikit-learn.png" alt="Scikit Learn" style="width: 80px; height: 80px; object-fit: contain; filter: grayscale(100%); transition: 0.3s;">
+                <p style="margin-top: 10px; font-weight: 600;">SciKit Learn</p>
+            </div>
+
+            <!-- Matplotlib -->
+            <div class="skill-item" style="flex: 0 0 auto; text-align: center;">
+                <img src="images/matplotlib.png" alt="Matplotlib" style="width: 80px; height: 80px; object-fit: contain; filter: grayscale(100%); transition: 0.3s;">
+                <p style="margin-top: 10px; font-weight: 600;">Matplotlib</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add this CSS for better styling -->
+<style>
+    .skills-scroll-container {
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+        scrollbar-width: thin; /* Firefox */
+        scrollbar-color: #888 transparent; /* Firefox */
+    }
+
+    .skills-scroll-container::-webkit-scrollbar {
+        height: 6px; /* Chrome/Safari */
+    }
+
+    .skills-scroll-container::-webkit-scrollbar-thumb {
+        background: #888; 
+        border-radius: 4px;
+    }
+
+    .skill-item:hover img {
+        filter: grayscale(0%) !important;
+        transform: scale(1.1);
+    }
+
+    .skill-item {
+        transition: 0.3s;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .skill-item:hover {
+        background: rgba(0,0,0,0.05);
+    }
+</style>					
 							</section>
 
 					</div>
